@@ -1,0 +1,5 @@
+SELECT name
+FROM employee
+WHERE department_id IS NULL
+AND to_char(work_state_date, 'mm.YYYY') >= '06.2021'
+AND salary < 100000
